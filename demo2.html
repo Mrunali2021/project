@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PatioTime pastry- PatioTime demo</title>
+    <link rel="icon" href="pt-logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        #navbarSupportedContent a:hover {
+            text-decoration-color: #dd5903;
+        }
+        
+        #paragraph {
+            margin-left: 0px;
+        }
+        
+        #paragraph h5 {
+            color: #dd5903;
+        }
+        
+        .img-1 {
+            border-top-left-radius: 200px 200px;
+            border-top-right-radius: 200px 200px;
+        }
+        
+        .img-2 {
+            border-top-left-radius: 200px 200px;
+            border-top-right-radius: 200px 200px;
+            margin-top: 80px;
+        }
+        
+        #back-img {
+            background-image: url(angelina-yan-Kv50bguCyUw-unsplash.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #color-1 {
+            background-color: rgba(230, 179, 123, 0.8);
+        }
+        /* #tasty {
+            background-color: rgba(230, 179, 123, 0.8);
+        }*/
+        
+        #tasty-lunches {
+            background-color: rgba(230, 179, 123, 0.8);
+        }
+        
+        #overlay {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #overlay-item {
+            padding-top: 250px;
+        }
+        
+        #newsletter {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        #newsletter h4 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        
+        .newsletter-input {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        
+        .newsletter-input input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+            outline: none;
+            padding: 10px 40px 10px 0;
+            font-size: 1rem;
+            background-color: transparent;
+        }
+        
+        .newsletter-input button {
+            position: absolute;
+            background: none;
+            border: none;
+            color: #000;
+            right: 10px;
+        }
+        
+        .form-check label {
+            font-size: 16px;
+        }
+        
+        .social-icons a {
+            color: #000;
+            margin-right: 15px;
+        }
+        
+        .social-icons a:hover {
+            color: #7b3f00;
+        }
+        
+        .custom-line {
+            border: none;
+            border-top: 1px dashed white;
+            margin: 30px 0;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: darkorange;
+            text-decoration: underline;
+        }
+        
+        @media only screen and (min-width:768px) {
+            #overlay-item {
+                padding-top: 120px;
+            }
+        }
+        
+        @media only screen and (min-width:1200px) {
+            #paragraph {
+                margin-left: 250px;
+            }
+            #overlay-item {
+                padding-top: 250px;
+            }
+            /* #overlay {
+                position: relative;
+            }
+            #overlay h2 {
+                position: absolute;
+                bottom: 330px;
+                left: 120px;
+            }
+            #overlay p {
+                position: absolute;
+                bottom: 310px;
+                left: 80px;
+            }
+            #overlay1 {
+                position: relative;
+            }
+            #overlay1 h2 {
+                position: absolute;
+                bottom: 330px;
+                left: 70px;
+            }
+            #overlay1 p {
+                position: absolute;
+                bottom: 310px;
+                left: 75px;
+            }
+            #overlay2 {
+                position: relative;
+            }
+            #overlay2 h2 {
+                position: absolute;
+                bottom: 330px;
+                left: 80px;
+            }
+            #overlay2 p {
+                position: absolute;
+                bottom: 310px;
+                left: 140px;
+            }*/
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid g-0" id="mainwrapper">
+        <section class="container-fluid fixed-top p-0" id="header">
+            <section class="container-fluid bg-light">
+                <section class="row">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg bg-light" id="navbar-example2">
+                            <a class="navbar-brand " href="index.html"><img src="pastry-logo-15.jpg" class="img-fluid mx-auto" style="width: 200px;"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                               <span class="navbar-toggler-icon"></span>
+                                   </button>
+
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link">Pastries</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pastries.html">Pastries</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+
+                            <div class="d-flex gap-4"><a href="" class="d-none d-xl-block" style="color:black;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="" class="d-none d-xl-block" style="color:black;"> <i class="fa-solid fa-circle-user"></i></a>
+                                <a href="" style="color:black;"><i class="fa-solid fa-cart-plus"></i></a></div>
+
+                        </nav>
+                    </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!--end of the header-->
+        <section class="container-fluid" id="hero">
+            <section class="row">
+                <div class="col-12 p-0">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active " data-bs-interval="3000">
+                                <img src="erol-ahmed-q9Vt4pVnGzc-unsplash.jpg" class="d-block w-100" alt="..." style="height:700px;">
+                                <div class="carousel-caption" style="margin-bottom:200px;">
+                                    <h5>Patisserie - Desserts - Cafeteria Since 1998</h5>
+                                    <h2 style="font-size:70px;">Start Your Day with Patio Time Pastry & Cafe</h2>
+                                    <button class="btn btn-light">DISCOVER MORE</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="joanna-kosinska-9WNi3OTzqtI-unsplash.jpg" class="d-block w-100" alt="..." style="height:700px;">
+                                <div class="carousel-caption" style="margin-bottom:200px;">
+                                    <h5>Patisserie - Desserts - Cafeteria Since 1998</h5>
+                                    <h2 style="font-size:70px;">Start Your Day with Patio Time Pastry & Cafe</h2>
+                                    <button class="btn btn-light">DISCOVER MORE</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="elena-leya-2mOHx9MIqb8-unsplash.jpg" class="d-block w-100" alt="..." style="height:700px;">
+                                <div class="carousel-caption" style="margin-bottom:200px;">
+                                    <h5>Patisserie - Desserts - Cafeteria Since 1998</h5>
+                                    <h2 style="font-size:70px;">Start Your Day with Patio Time Pastry & Cafe</h2>
+                                    <button class="btn btn-light">DISCOVER MORE</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="megan-bucknall-Np38qV3HVF0-unsplash.jpg" class="d-block w-100" alt="..." style="height:700px;">
+                                <div class="carousel-caption" style="margin-bottom:200px;">
+                                    <h5>Patisserie - Desserts - Cafeteria Since 1998</h5>
+                                    <h2 style="font-size:70px;">Start Your Day with Patio Time Pastry & Cafe</h2>
+                                    <button class="btn btn-light">DISCOVER MORE</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="p-o-sitive-negative-73Dhr6KYny8-unsplash.jpg" class="d-block w-100" alt="..." style="height:700px;">
+                                <div class="carousel-caption" style="margin-bottom:200px;">
+                                    <h5>Patisserie - Desserts - Cafeteria Since 1998</h5>
+                                    <h2 style="font-size:70px;">Start Your Day with Patio Time Pastry & Cafe</h2>
+                                    <button class="btn btn-light">DISCOVER MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--end of hero-->
+        <section class="container-fluid" id="para">
+            <section class="container">
+                <div class="mt-5 text-center col-xl-8 container" id="paragraph">
+                    <h5 style="font-size:16px;">Your Local Patisserie & Café, Serving Customers for 30 years</h5>
+                    <h2 style=" font-size:50px;">Welcome to Patio.Time</h2>
+                    <p>PatioTime Patisserie continues to innovate and perfect its traditions, making pastries, desserts, breads and other delicacies by hand. We are committed to providing our customers with fresh baked treats that are made with high quality
+                        seasonal ingredients.</p>
+                    <a href=" " class="text-decoration-none text-dark ">DISCOVER MORE</a>
+                </div>
+            </section>
+        </section>
+        <!--end of para-->
+        <section class="container-fluid mt-5" id="image">
+            <section class="container">
+                <section class="row">
+                    <div class="col-12 col-md-4"><img src="kirsten-drew-n49BjsFf5dI-unsplash-550x825.jpg" class="img-fluid img-1">
+                        <h2 class="text-danger text-center" style="font-size:40px;">PASTRY</h2>
+                    </div>
+                    <div class="col-12 col-md-4"><img src="kobby-mendez-w0_w3N_hG00-unsplash-550x825.jpg" class="img-fluid img-2">
+                        <h2 class="text-danger text-center" style="font-size:40px;">CAKES</h2>
+                    </div>
+                    <div class="col-12 col-md-4"><img src="yulia-khlebnikova-29D6U5sZfjk-unsplash-550x825.jpg" class="img-fluid img-1">
+                        <h2 class="text-danger text-center" style="font-size:40px;">BREAD</h2>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!--end of image-->
+        <section class="container-fluid mt-5" id="back-img">
+            <div class="text-center container" id="color-1">
+                <h5 class="" style="padding-top:60px;">Our catering experts can help you create a lasting impression for that very special occasion</h5>
+                <h2>Weddings & Events Catering</h2>
+                <button class="btn btn-transparent border border-danger border-3" style="font-size:20px; margin-bottom:60px;">DISCOVER MORE</button>
+            </div>
+        </section>
+        <!--end of back-img-->
+        <section class="container-fluid mt-5" id="baked">
+            <section class="container">
+                <section class="row align-items-center">
+                    <div class="col-12 col-md-6 col-xl-4 mt-3"><img src="pastry-img-2-550x825.jpg" class="img-fluid" style="height:530px; width:90%;"></div>
+                    <div class="col-12 col-xl-4 text-center mt-3 mt-md-3 d-none d-xl-block">
+                        <h5 style="font-size:18px;">THE STORY BEHIND PATIO.TIME</h5>
+                        <h2 style="font-size:40px;">BAKED WITH LOVE</h2>
+                        <P>PatioTime Patisserie and Cafe serves a wide array of bread, pastries, and coffee to customers in Paris, France. We are a bakery and cafe dedicated to providing our customers with fresh-baked treats that are made using quality ingredients.</P>
+                        <img src="Alexandra-Misty-255x56.png">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mt-3"><img src="pastry-img-1-550x825.jpg" class="img-fluid" style="height:530px; width:90%;"></div>
+                    <div class="col-12 col-xl-4 text-center mt-3 mt-md-3 d-xl-none">
+                        <h5 style="font-size:18px;">THE STORY BEHIND PATIO.TIME</h5>
+                        <h2 style="font-size:40px;">BAKED WITH LOVE</h2>
+                        <P>PatioTime Patisserie and Cafe serves a wide array of bread, pastries, and coffee to customers in Paris, France. We are a bakery and cafe dedicated to providing our customers with fresh-baked treats that are made using quality ingredients.</P>
+                        <img src="Alexandra-Misty-255x56.png">
+                    </div>
+
+                </section>
+            </section>
+        </section>
+        <!--end of baked-->
+        <section class="container-fluid mt-5" id="tasty-lunches">
+            <section class="row align-items-center">
+                <div class="col-12 col-md-5 pe-2" id="tasty">
+                    <h5 class="" style="color:brown;">Come for our fresh, delicious fare, and stay for a dining experience you won’t forget.</h5>
+                    <h2 class="" style="color:brown;">HAPPY HOURS. TASTY LUNCHES. ROMANTIC DINNERS. ENJOY GOOD TIMES WITH US.</h2>
+                    <button class="text-decoration-none p-2" style="color:brown; border:2px solid brown; background-color: rgba(230, 179, 123, 0.8);">EXPLORE OUR MENU</button>
+                </div>
+                <div class="col-12 col-md-7 p-0"><img src="jelleke-vanooteghem-qfRsevOtQXE-unsplash.jpg" class="img-fluid w-100" style="height:550px;"></div>
+
+            </section>
+        </section>
+        <!--end of tasty-lunches-->
+        <section class="container-fluid mt-5" id="menu">
+            <section class="container">
+                <section class="row">
+                    <div class="col-12 col-xl-6">
+                        <h2 class="text-center" style="color:#dd5903">BREAKFAST</h2>
+                        <div class="row">
+                            <div class="col-10">
+                                <h5>Avocado Toast ...............</h5>
+                                <p>Served plain or with a fried egg on top (add an egg for $2)</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$6</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>NY Style Bacon, Egg & Cheese .............................</h5>
+                                <p>Served on a Kaiser roll</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$7</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Chicharrones De Pollo & Waffles .............................</h5>
+                                <p>Blueberry, Raisin, or Ham & Cheese Scones</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$14</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Warm Croissant ..............</h5>
+                                <p>Chocolate, Almond, Butter or Ham & Cheese Croissants</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$7</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Waffle Station .................</h5>
+                                <p>Served with Whipped Cream and Strawberries</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$12</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Bagel Breakfast ..............</h5>
+                                <p>Grilled Canadian Bacon or Regular Bacon with Eggs</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$6.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <h2 class="text-center" style="color:#dd5903">SANDWICHES</h2>
+                        <div class="row">
+                            <div class="col-10">
+                                <h5>Calistoga Cobb ...............</h5>
+                                <p>Bacon, Egg, Quinoa, Roasted Corn, Tomato, Avocado</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$9</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Caesar Salad ...................</h5>
+                                <p>Chopped Romaine Hearts, Gluten Free Croutons, Parmesan</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$12</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Caprese Salad ...............</h5>
+                                <p>Breakfast Croissant Sandwich</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$15</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>House Salad ..................</h5>
+                                <p>Rotini with Pesto and Vegetabless</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$18</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Waffle Station .................</h5>
+                                <p>Served with Whipped Cream and Strawberries</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$12</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mt-xl-3">
+                        <h2 class="text-center" style="color:#dd5903">OMELETTES</h2>
+                        <div class="row">
+                            <div class="col-10">
+                                <h5>Mozzarella Chicken ........</h5>
+                                <p>
+                                    Ziti Pasta, Garden Salad, Garlic Bread and Dessert</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$16</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Vegetarian Lasagna ........</h5>
+                                <p>Accompanied by a Caesar salad, Garlic Bread and Dessert</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$16</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>London Broil ...................</h5>
+                                <p>Marinated Grilled London Broil with Grilled Green & Red Peppers</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$19</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Crab Cake .........................</h5>
+                                <p>Roumalade Sauce, Blended Wild Rice, Choice of Green Salad</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$18</h5>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mt-xl-3">
+                        <h2 class="text-center" style="color:#dd5903">TOASTS</h2>
+                        <div class="row">
+                            <div class="col-10">
+                                <h5>Country Breakfast ..........</h5>
+                                <p>
+                                    Sausage Links, Home Style Potatoes, Whole Wheat Toasted</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$12</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Avocado Mash ................</h5>
+                                <p>Lime, Pickled Red Onions, Roasted Pepitas, Fresno Chiles</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$12</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Burrata Bruschetta .........</h5>
+                                <p>Roasted Tomatoes, Fresh Grape Tomatoes, Sun Dried Tomatoes</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$12</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Seasonal Toast .................</h5>
+                                <p>Smoked Salmon, Cream Cheese Spread, Capers, Red Onion</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$14</h5>
+                            </div>
+                            <div class="col-10">
+                                <h5>Organic Greek Yogurt ....</h5>
+                                <p>Ricotta, Goat Cheese, Beetroot and Datterini</p>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-center">$16</h5>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!--end of menu-->
+
+        <section class="container-fluid p-0 g-0 mt-5 bg-dark mt-3" id="img-overlay">
+            <section class="row p-0">
+                <div class="col-12 col-md-3 p-0">
+                    <div class="card text-bg-dark" id="overlay">
+                        <img src="pastry-img-3.jpg" class="card-img img-fluid w-100" alt="...">
+                        <div class="card-img-overlay text-center" id="overlay-item">
+                            <h2 class="card-text">Grab & Go</h2>
+                            <p class="card-text">Fresh and ready to go. $12 / person</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-0">
+                    <div class="card text-bg-dark" id="overlay">
+                        <img src="pastry-img-4.jpg" class="card-img img-fluid w-100 rounded-0" alt="...">
+                        <div class="card-img-overlay text-center" id="overlay-item">
+                            <h2 class="card-text">Ladyfinger Biscuit</h2>
+                            <p class="card-text">Flour, Butter, Cream. $3.99 / person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-0">
+                    <div class="card text-bg-dark" id="overlay">
+                        <img src="pastry-img-5.jpg" class="card-img img-fluid rounded-0 " alt="...">
+                        <div class="card-img-overlay text-center" id="overlay-item">
+                            <h2 class="card-text">Coffee & Cakes</h2>
+                            <p class="card-text">$15 / person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-0">
+                    <div class="card text-bg-dark" id="overlay">
+                        <img src="pastry-img-6.jpg" class="card-img img-fluid rounded-0" alt="...">
+                        <div class="card-img-overlay text-center" id="overlay-item">
+                            <h2 class="card-text">Croissant</h2>
+                            <p class="card-text">Almond, Yeast, Eggs. $15 / person</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--end of img-overlay-->
+
+        <section class="container-fluid mt-5" id="contact">
+            <section class="container">
+                <section class="row">
+                    <div class="col-12 col-md-12 col-xl-6" id="newsletter">
+                        <div class="text-start">
+                            <h4>SUBSCRIBE TO THE NEWSLETTER: LET'S STAY IN TOUCH!</h4>
+
+                            <form>
+
+                                <div class="newsletter-input">
+                                    <input type="email" placeholder="Your Email Address" required>
+                                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+
+
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+            I agree to the Privacy Policy
+          </label>
+                                </div>
+
+
+                                <p class="fw-bold mb-2">FOLLOW US:</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3 mt-md-0">
+                        <h4>ADDRESS AND HOURS</h4>
+                        <P>Silk St, Barbican, London EC2Y 8DS, UK</P>
+                        <div class="row">
+                            <div class="col-6">
+                                Monday - Friday</div>
+                            <div class="col-6">09:00 - 22:00</div>
+                            <div class="col-6">Saturday - Sunday</div>
+                            <div class="col-6">11:00 - 00:00
+                            </div>
+
+                        </div>
+                        <button class="btn btn-transparent border border-dark border-2 rounded-0 mt-4">CONTACT US</button>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3 mt-md-0">
+                        <h4>TAKING ORDERS</h4>
+                        <P>Exclusively by phone</P>
+                        <P>Tel: +39-055-123456</P>
+                        <P>Monday to Sunday from 10 a.m. to 6 p.m.</P>
+                        <button class="btn btn-transparent border border-dark border-2 rounded-0 mt-2">ORDRE NOW</button>
+                    </div>
+                </section>
+            </section>
+            <!--end of contact-->
+            <section class="container-fluid bg-dark mt-5 p-0 g-0" id="footer">
+                <section class="container">
+                    <section class="row">
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="shop-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">IN OUR STORES</h4>
+                            <P class="text-light">Pickup your products in our Paris, Cannes or Monaco stores</P>
+                        </div>
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="shipped-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">HOME DELIVERY</h4>
+                            <P class="text-light">Products carefully shipped in 24h in France & in 48h in Europe</P>
+                        </div>
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="delivery-man-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">By a Caring Courier</h4>
+                            <p class="text-light">In Paris and inner suburbs, Monday to Saturday, from 1pm to 7pm</p>
+                        </div>
+                        <div class="col-12 col-md-3 mt-3 text-center"><img src="credit-card-255x255.png" class="img-fluid" style="height:50px;">
+                            <h4 class="text-light">100% Secure Payment</h4>
+                            <p class="text-light">Support for multiple payment gateways. CB, VISA, Mastercard, Amex</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="col-12 mt-3">
+                            <div class="row text-light">
+                                <div class="col-12 col-xl-5 d-none d-xl-block ">
+                                    <p>&copy; Copyright PatioTime WordPress Theme for Restaurant & Cafe.</p>
+                                </div>
+                                <div class="col-12 col-md-4 col-xl-3 text-center mt-2 mt-md-0"><a href="https://www.google.com/maps/place/Barbican+Centre/@51.5205487,-0.0936463,18z/data=!4m13!1m7!3m6!1s0x48761ca98744377d:0x9e296ec2b218ce78!2sSilk+St,+London,+UK!3b1!8m2!3d51.5198778!4d-0.0916239!3m4!1s0x48761b56fb64b275:0xc756e26675d21f40!8m2!3d51.5202077!4d-0.0937864
+                    "><i class="fa-solid fa-location-dot "></i>Silk St, Barbican, London EC2Y 8DS, UK</a></div>
+                                <div class="col-12 col-md-4 col-xl-2 text-center mt-2 mt-md-0"><a href="tel:+39-055-123456 "><i class="fa-solid fa-phone "></i> +39-055-123456</a></div>
+                                <div class="col-12 col-md-4 col-xl-2 text-center mt-2 mt-md-0"><a href="booking@patiotime.com "><i class="fa-solid fa-envelope "></i>booking@patiotime.com</a></div>
+                                <div class="col-12 d-xl-none text-center mt-3">
+                                    <p>&copy; Copyright PatioTime WordPress Theme for Restaurant & Cafe.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </section>
+            </section>
+            <!--end of footer-->
+        </section>
+
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 " crossorigin="anonymous "></script>
+</body>
+
+</html>
