@@ -11,10 +11,14 @@
       .cta-btn {
         border-radius: 999px;
         padding: 10px 30px;
-        margin-left: 500px;
         background-color: #005555;
         font-size: 18px;
         font-weight: bold;
+      }
+      @media only screen and (min-width:1200px) {
+        #button {
+          margin-left: 500px;
+        }
       }
     </style>
   </head>
@@ -417,7 +421,7 @@
   <div class="container">
     <form>
     <h1 class ="mb-4 display-6 fw-bold text-center">Be a part of our growing real Estate Agents </h1>
-    <a href="#apply" class="btn btn-Info cta-btn m">Apply for Real Estate Agent</a>
+    <a href="#apply" class="btn btn-Info cta-btn" id="button">Apply for Real Estate Agent</a>
   </div> 
   </form>                                                                                    
 </section>
